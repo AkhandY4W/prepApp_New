@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/daily_test_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    android:navigationIcon="@drawable/ic_close_white_24dp"
+    app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    tools:ignore="MissingPrefix"
+    tools:showIn="@layout/activity_daily_test">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.youth4work.prepapp.ui.views.CustomTextViewFontRegular
+            android:id="@+id/txt_action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Test"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/eighteen_sp" />
+
+        <TextView
+            android:id="@+id/timerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:text="14"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true" />
+
+        <at.grabner.circleprogress.CircleProgressView
+            android:visibility="gone"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/ten_dp"
+            app:cpv_maxValue="100"
+            app:cpv_autoTextSize="false"
+            app:cpv_barColor="@color/bleu_de_france"
+            app:cpv_barWidth="2dp"
+            app:cpv_contourSize="0dp"
+            app:cpv_rimColor="@color/vulcan"
+            app:cpv_rimWidth="2.5dp"
+            app:cpv_seekMode="false"
+            app:cpv_showUnit="false"
+            app:cpv_spinColor="@color/colorPrimary"
+            app:cpv_textColor="@android:color/white"
+            app:cpv_textScale="1"
+            app:cpv_textSize="20sp"
+            app:cpv_unit="%"
+            app:cpv_unitColor="@color/colorPrimary"
+            app:cpv_unitPosition="right_top"
+            app:cpv_unitScale="1" />
+
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

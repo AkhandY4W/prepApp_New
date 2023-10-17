@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.youth4work.prepapp",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 80,
+      "versionName": "Y4W-PG-6.1.8",
+      "outputFile": "app-release.apk"
+    }
+  ]
+}

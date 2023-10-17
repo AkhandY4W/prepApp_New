@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    app:cardBackgroundColor="#FFFFFF"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/linearlayout"
+            android:layout_toRightOf="@+id/linearlayout"
+            android:orientation="vertical">
+
+            <com.youth4work.prepapp.ui.views.CustomTextViewFontRegular
+                android:id="@+id/txt_subject_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:textColor="@color/dove_gray"
+                android:textSize="16sp" />
+
+            <com.daasuu.ahp.AnimateHorizontalProgressBar
+                android:id="@+id/stat_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@+id/txt_subject_name"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:ahp_backgroundColor="@color/mercury"
+                app:ahp_progressColor="@color/fruit_salad" />
+
+            <com.daasuu.ahp.AnimateHorizontalProgressBar
+                android:id="@+id/stat_red_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@+id/txt_subject_name"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:ahp_backgroundColor="@color/mercury"
+                app:ahp_progressColor="#D9373B" />
+
+            <com.daasuu.ahp.AnimateHorizontalProgressBar
+                android:id="@+id/stat_yellow_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@+id/txt_subject_name"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:ahp_backgroundColor="@color/mercury"
+                app:ahp_progressColor="#F4AA58" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_subject_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Percentile"
+                android:textColor="@color/txt_black_30"
+                android:textSize="@dimen/text_size_10" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

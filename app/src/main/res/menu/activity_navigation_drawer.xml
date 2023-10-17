@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_nav_home_news_feed"
+            android:title="@string/all_prep" />
+        <item
+            android:id="@+id/nav_change_course"
+            android:icon="@drawable/ic_nav_courses"
+            android:title="@string/my_prep" />
+        <item
+            android:id="@+id/nav_about_test"
+            android:icon="@drawable/ic_previous_year_question_paper"
+            android:title="@string/previous_year_papers"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_upgrade"
+            android:icon="@drawable/ic_upgrade"
+            android:title="@string/upgrade" />
+        <item
+            android:id="@+id/work_mail"
+            android:icon="@drawable/ic_nav_workmail"
+            android:title="Inbox/Message" />
+        <item
+        android:id="@+id/chat"
+        android:visible="false"
+        android:icon="@drawable/ic_forum"
+        android:title="Study Mates" />
+        <item
+            android:id="@+id/nav_invite_friend"
+            android:icon="@drawable/ic_invite_friend"
+            android:title="@string/inviteafriend" />
+        <item
+            android:id="@+id/nav_verify_email"
+            android:icon="@drawable/ic_not_verify_email_id"
+            android:title="@string/verify_email"/>
+       <item
+            android:id="@+id/nav_verify_mobile"
+            android:icon="@drawable/ic_not_verify_phone_number"
+            android:title="@string/verify_mobile"/>
+        <item
+            android:id="@+id/payment_status"
+            android:visible="false"
+            android:icon="@drawable/ic_payment_status_filled"
+            android:title="Payment Status"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_nav_logout_signout"
+            android:title="@string/logout" />
+    </group>
+</menu>

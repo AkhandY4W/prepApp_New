@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#087ccd</color>
+    <color name="colorPrimary30">#4D087ccd</color>
+    <color name="colorPrimaryDark">#087ccd</color>
+    <color name="colorAccent">#087ccd</color>
+    <color name="curiousBlue">#3398DB</color>
+    <color name="curiousBlue1">#076Fb8</color>
+    <color name="bleu_de_france">#3899DC</color>
+    <color name="vulcan">#14161E</color>
+    <color name="pickled_bluewood">#34485E</color>
+    <color name="solitude">#EAECEE</color>
+    <color name="wild_sand">#F4F4F4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="splash_background">#F5F5F5</color>
+    <color name="madison">#2C3E50</color>
+    <color name="fruit_salad">#4CAF51</color>
+    <color name="red_orange">#F44336</color>
+    <color name="zircon">#DEE3E7</color>
+    <color name="light_gray">#D5D5D5</color>
+    <color name="san_juan">#295266</color>
+    <color name="concrete">#F2F2F2</color>
+    <color name="alto">#DADADA</color>
+    <color name="azure">#39579A</color>
+    <color name="punch">#DF4A32</color>
+    <color name="stack">#8C8D8E</color>
+    <color name="mercury">#E3E6E8</color>
+    <color name="mystic">#E1E7E9</color>
+    <color name="gray_chateau">#A4A4A4</color>
+    <color name="star_dust">#9F9F9F</color>
+    <color name="gallery">#F0F0F0</color>
+    <color name="mountain_mist">#959595</color>
+    <color name="tangaroa">#202C38</color>
+    <color name="montana">#3A3A3A</color>
+    <color name="rangoon_green">#191919</color>
+    <color name="mako">#535353</color>
+    <color name="mine_shaft">#333333</color>
+    <color name="chicago">#5B5B5B</color>
+    <color name="bombay">#AEAEAE</color>
+    <color name="nero">#252525</color>
+    <color name="dove_gray">#747474</color>
+    <color name="charade">#272934</color>
+
+    <color name="prep_button_default_color">#087ccd</color>
+    <color name="prep_button_default_shadow_color">#00599d</color>
+    <color name="big_stone">#0A2741</color>
+    <color name="darkblack">#000000</color>
+    <color name="yellow">#FFFFE0</color>
+
+    <!-- created By Anil -->
+    <color name="grey">#dddddd</color>
+    <color name="text_grey">#999999</color>
+    <color name="text_grey_dark">#666666</color>
+    <color name="txt_black">#333333</color>
+    <color name="black">#333333</color>
+    <color name="txt_black_70">#B3333333</color>
+    <color name="txt_black_30">#4D333333</color>
+    <color name="txt_white">#FFFFFF</color>
+    <color name="txt_white_70">#B3FFFFFF</color>
+    <color name="txt_white_30">#4DFFFFFF</color>
+    <color name="background">#f2f2f2</color>
+    <color name="text_grey_30">#f1f9ff</color>
+    <color name="colorTxtlight">#B4D7F0</color>
+    <color name="background2">#f5f5f5</color>
+    <color name="Gray19">#303030</color>
+    <color name="Gray40">#666666</color>
+</resources>

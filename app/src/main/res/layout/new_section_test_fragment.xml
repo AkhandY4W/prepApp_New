@@ -1,0 +1,241 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <ImageView
+                android:id="@+id/img_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/myrect"
+                android:elevation="@dimen/card_elevation"
+                android:scaleType="fitXY"
+                android:src="@drawable/category_dummy"/>
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:elevation="8dp"
+                android:visibility="gone"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/md_nav_back"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/background"
+        app:behavior_overlapTop="32dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.vlonjatg.progressactivity.ProgressRelativeLayout
+            android:id="@+id/progressActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/sixteen_dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/section_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:id="@+id/header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/sixteen_dp">
+
+                        <TextView
+                            android:id="@+id/txt_dummy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/btn_take_test"
+                            android:text="All Section Covered"
+                            android:textColor="@color/txt_black_30"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <TextView
+                            android:id="@+id/txt_cat_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_dummy"
+                            android:layout_marginTop="@dimen/twelve_dp"
+                            android:layout_toStartOf="@+id/btn_take_test"
+                            android:fontFamily="@font/robotobold"
+                            android:text="English"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/text_size_16" />
+
+                        <TextView
+                            android:id="@+id/txt_asp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_cat_name"
+                            android:layout_marginTop="@dimen/eight_dp"
+                            android:layout_toStartOf="@+id/btn_take_test"
+                            android:text="435555 Aspriants"
+                            android:textColor="@color/txt_black_70"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <TextView
+                            android:id="@+id/txt_previous_year_test"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_asp"
+                            android:layout_marginTop="@dimen/eight_dp"
+                            android:background="@drawable/state_pressed_ripple"
+                            android:padding="8dp"
+                            android:text="Previous Year Paper"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <LinearLayout
+                            android:id="@+id/btn_take_test"
+                            android:layout_width="@dimen/button_height_50"
+                            android:layout_height="@dimen/button_height_50"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/state_pressed_ripple"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/twenty_dp"
+                                android:layout_height="@dimen/twenty_dp"
+                                android:background="@drawable/assets_01_ic_arrow_left" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txt_dummy_section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section_test"
+                    android:fontFamily="@font/robotobold"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:text="Sectional Test"
+                    android:textColor="@color/txt_black_30"
+                    android:textSize="@dimen/text_size_14" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/subjects_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_dummy_section"
+                    android:clipToPadding="true"
+                    android:paddingBottom="60dp"
+                    tools:listitem="@layout/item_section_test" />
+
+
+
+            </RelativeLayout>
+        </com.vlonjatg.progressactivity.ProgressRelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/card_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/no_test_img"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_case_no_test" />
+
+        <TextView
+            android:id="@+id/txt_no_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_comment_img"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/sixteen_dp"
+            android:gravity="center"
+            android:text="Stay Updated!"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/txt_page_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_no_comment"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="Mock Tests will be added soon."
+            android:textColor="@color/txt_black_30"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/upgrade_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="80"
+            android:gravity="center_vertical"
+            android:text="* To practice all mock test "
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_upgrade"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="20"
+            android:background="@drawable/blue_border"
+            android:text="Upgrade"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_gray"
+    android:paddingBottom="@dimen/sixteen_dp"
+    android:paddingLeft="@dimen/sixteen_dp"
+    android:paddingRight="@dimen/sixteen_dp"
+    android:paddingTop="@dimen/sixteen_dp"
+    tools:ignore="MissingPrefix">
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/txt_correct_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="start"
+        android:text="@string/correct_message"
+        android:textColor="@color/fruit_salad"
+        android:textSize="20sp"/>
+
+    <com.youth4work.prepapp.ui.views.CustomTextViewFontRegular
+        android:id="@+id/txt_wrong_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableStart="@drawable/ic_wrong_24dp"
+        android:text="@string/wrong_message"
+        android:textColor="@color/red_orange"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <com.youth4work.prepapp.ui.views.CustomTextViewFontRegular
+        android:id="@+id/txt_timeup_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableStart="@drawable/ic_time_up_24dp"
+        android:drawablePadding="10dp"
+        android:text="@string/time_up_message"
+        android:textColor="@color/madison"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/txt_discussion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_question_answer_black_18dp" />
+
+</RelativeLayout>

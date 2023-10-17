@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vlonjatg.progressactivity.ProgressRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:progressActivity="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    progressActivity:emptyBackgroundColor="#fbc02d"
+    progressActivity:errorBackgroundColor="#42a5f5"
+    progressActivity:loadingBackgroundColor="#FFFFFF"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_message"
+        android:visibility="gone"
+        android:text="@string/attempt_tests_message"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/twenty_dp"
+        android:layout_centerInParent="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ranks_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.vlonjatg.progressactivity.ProgressRelativeLayout>

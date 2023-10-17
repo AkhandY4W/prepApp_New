@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:id="@+id/relativeLayout"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txt_test_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/image"
+        android:layout_toRightOf="@+id/image"
+        android:ellipsize="end"
+        android:ems="3"
+        android:layout_marginStart="8dp"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="2"
+        android:text="Test Name Test Name Test Name Test Name Test Name Test Name Test Name Test Name Test Name Test Name Test Name Test Name "
+        android:textSize="12sp"
+        android:layout_marginLeft="8dp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:visibility="visible"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/assets_01_ic_arrow_down" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txt_test_name"
+        android:layout_marginTop="16dp"
+        android:background="#dddddd" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_total_mark_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mark_for_review_icon"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="00" />
+
+        <TextView
+            android:id="@+id/txt_total_attempted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:drawableLeft="@drawable/ic_panorama_fish_eye_blue_24dp"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="00" />
+
+        <TextView
+            android:id="@+id/txt_total_unattempted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:drawableLeft="@drawable/ic_panorama_fish_eye_blue_24dp"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="00" />
+    </LinearLayout>
+
+</RelativeLayout>

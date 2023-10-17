@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.forum.AskQuestionActivity">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_add_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ask your question"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName|textMultiLine"
+        android:textSize="@dimen/text_size_20"
+        app:met_floatingLabel="highlight"
+        android:fontFamily="@font/robotobold"
+        android:lineSpacingExtra="4dp"
+        app:met_floatingLabelText="Your question"
+        app:met_primaryColor="?colorAccent" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_add_question_desc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:minHeight="150dp"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:fontFamily="@font/robotomedium"
+        app:met_hideUnderline="true"
+        android:background="#FFFFFF"
+        android:hint="Describe your Question"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName|textMultiLine"
+        android:singleLine="false"
+        android:lineSpacingExtra="2dp"
+        android:textSize="@dimen/text_size_16"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Description"
+        app:met_primaryColor="?colorAccent" />
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="cancel"
+            android:textColor="@color/txt_black_30" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Add Question"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+</LinearLayout>

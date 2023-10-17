@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="10dp"
+    tools:ignore="MissingPrefix">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/img_user_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_nav_courses"
+        app:siBorderColor="#c4c4c4"
+        app:siBorderWidth="1dp" />
+
+    <com.youth4work.prepapp.ui.views.CustomTextViewFontRegular
+        android:id="@+id/txt_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@+id/img_user_avatar"
+        android:text="Q. This is the question, is it? the question, is it?"
+        android:textColor="@color/tangaroa"
+        android:textSize="@dimen/eighteen_sp" />
+
+    <com.youth4work.prepapp.ui.views.CustomTextViewFontBold
+        android:id="@+id/txt_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="12345"
+        android:textColor="@color/tangaroa"
+        android:textSize="@dimen/twenty_sp" />
+</RelativeLayout>
+

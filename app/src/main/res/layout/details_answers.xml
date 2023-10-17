@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <com.youth4work.prepapp.ui.views.CustomTextViewFontRegular
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sample"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/TotalComment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Answers : 5"
+                android:textColor="@color/mine_shaft"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/ARank"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="Votes : 6"
+                android:textColor="@color/mine_shaft"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/imageAnswer"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/com_facebook_profile_picture_blank_portrait" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/AnswerByName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Samar"
+                android:textColor="@color/mine_shaft"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="08-12-2015"
+                android:textColor="@color/mine_shaft"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <com.youth4work.prepapp.ui.views.PrepButton
+                android:id="@+id/down"
+                android:layout_width="0dp"
+                android:layout_marginRight="2dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="-1"
+                android:textColor="@android:color/white" />
+
+            <com.youth4work.prepapp.ui.views.PrepButton
+                android:id="@+id/up"
+                android:layout_width="0dp"
+                android:layout_marginLeft="2dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="+1"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vlonjatg.progressactivity.ProgressRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:progressActivity="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressActivity"
+    android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:layout_height="match_parent"
+    progressActivity:emptyBackgroundColor="#f2f2f2"
+    progressActivity:errorBackgroundColor="#f2f2f2"
+    progressActivity:loadingBackgroundColor="#f2f2f2"
+    tools:ignore="MissingPrefix">
+
+     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/exams_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/sixteen_dp"
+        android:paddingBottom="@dimen/sixteen_dp"
+        android:layout_marginEnd="@dimen/sixteen_dp"/>
+</com.vlonjatg.progressactivity.ProgressRelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vlonjatg.progressactivity.ProgressRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:progressActivity="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/activityToolbar"
+    progressActivity:emptyBackgroundColor="#fbc02d"
+    progressActivity:errorBackgroundColor="#42a5f5"
+    progressActivity:loadingBackgroundColor="#FFFFFF"
+    tools:ignore="MissingPrefix">
+
+    <include
+        android:id="@+id/daily_test_toolbar"
+        layout="@layout/daily_test_toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dailyTestRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/daily_test_toolbar"
+        android:paddingBottom="@dimen/seventy_dp"
+        tools:listitem="@layout/item_option" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/zircon"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/ten_dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/ten_dp">
+
+        <com.youth4work.prepapp.ui.views.PrepButton
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_font_sp"
+            app:buttonColor="@color/colorPrimary"
+            app:cornerRadius="3dp"
+            android:visibility="gone"
+            app:shadowEnabled="false"
+            app:shadowHeight="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <Button
+                android:id="@+id/btn_disc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="Solutions"
+                android:layout_gravity="start"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/btn_font_sp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/state_pressed_ripple"
+                />
+            <com.youth4work.prepapp.ui.views.PrepButton
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:text="@string/next"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btn_font_sp"
+                app:buttonColor="@color/colorPrimary"
+                app:cornerRadius="3dp"
+                app:shadowEnabled="false"
+                app:shadowHeight="1dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</com.vlonjatg.progressactivity.ProgressRelativeLayout>

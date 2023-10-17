@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.forum.AddAnswerActivity">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_add_question_ans"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:gravity="start"
+        android:hint="Start your answer"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName|textMultiLine"
+        android:minHeight="150dp"
+        android:singleLine="false"
+        android:fontFamily="@font/robotobold"
+        android:lineSpacingExtra="4dp"
+        android:textSize="@dimen/text_size_20"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Your answer"
+        app:met_hideUnderline="true"
+        app:met_primaryColor="?colorAccent" />
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="cancel"
+            android:textColor="@color/txt_black_30" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Add Answer"
+            android:textColor="@color/colorPrimary" />
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Update Answer"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+</LinearLayout>

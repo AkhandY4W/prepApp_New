@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
+    android:clipToPadding="true"
+    android:elevation="8dp"
+    app:cardCornerRadius="2dp"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/txt_exam_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="JEE JEEJEEJEEJEEJEEJEEJEE JEddddddd"
+            android:textColor="@color/txt_black_30"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/txt_exam_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_exam_category"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="2.5dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/robotobold"
+            android:text="JEE JEEJEEJEEJEEJEEJEEJEE JEddddddd"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_14" />
+
+
+        <TextView
+            android:id="@+id/txt_about_exam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_exam_name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="16dp"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="About Test"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/txt_paper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_about_exam"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Previour Years Papers"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_paper"
+            android:background="@color/background"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/txt_exam_attempts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/txt_ic_test_taker"
+                android:drawableLeft="@drawable/txt_ic_test_taker"
+                android:drawablePadding="4dp"
+                android:gravity="start"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="230 aspirants"
+                android:textColor="@color/txt_black_70"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/txt_take_test"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/robotobold"
+                android:gravity="end"
+                android:padding="4dp"
+                android:text="Take Test"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

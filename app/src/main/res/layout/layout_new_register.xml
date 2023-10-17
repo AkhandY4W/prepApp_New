@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vlonjatg.progressactivity.ProgressRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/progressActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="@dimen/sixteen_dp">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/txt_dummy1"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/prep_logo_2" />
+
+            <TextView
+                android:id="@+id/txt_dummy2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_dummy1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/sixteen_dp"
+                android:text="Create your Prep Account"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/txt_dummy3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_dummy2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="to continue to Prep as a Youth"
+                android:textColor="@color/txt_black_70"
+                android:textSize="@dimen/text_size_16"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/edt_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_dummy2"
+                android:layout_marginTop="@dimen/sixteen_dp"
+                android:layout_marginBottom="58dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:clipToPadding="true"
+                    android:elevation="@dimen/sixteen_dp"
+                    app:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:id="@+id/register_phase1_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/eight_dp"
+                        android:paddingEnd="@dimen/eight_dp"
+                        android:visibility="visible">
+
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/et_full_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="@string/full_name"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName"
+                            app:met_clearButton="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_floatingLabelText="@string/full_name"
+                            app:met_primaryColor="?colorAccent"
+                            app:met_singleLineEllipsis="true" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/et_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/et_full_name"
+                            android:layout_marginTop="8dp"
+                            android:hint="Your Email"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName"
+                            app:met_clearButton="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_floatingLabelText="Email"
+                            app:met_primaryColor="?colorAccent"
+                            app:met_singleLineEllipsis="true" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/et_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/et_email"
+                            android:layout_marginTop="8dp"
+                            android:hint="Desired Username"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName"
+                            app:met_clearButton="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_floatingLabelText="Username"
+                            app:met_primaryColor="?colorAccent"
+                            app:met_singleLineEllipsis="true" />
+
+                        <FrameLayout
+                            android:id="@+id/frame_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/et_user_name">
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/et_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:hint="Desired Password"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword"
+                                app:met_floatingLabel="highlight"
+                                app:met_floatingLabelText="Password"
+                                app:met_primaryColor="?colorAccent"
+                                app:met_singleLineEllipsis="true" />
+
+                            <Button
+                                android:id="@+id/yourButton"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center|end"
+                                android:background="@drawable/ic_password_view_off_24dp" />
+
+                        </FrameLayout>
+
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/et_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/frame_password"
+                            android:layout_marginTop="8dp"
+                            android:hint="Mobile Number"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            app:met_clearButton="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_floatingLabelText="Mobile Number"
+                            app:met_primaryColor="?colorAccent"
+                            app:met_singleLineEllipsis="true" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:clipToPadding="true"
+                    android:elevation="16dp"
+                    android:layout_marginBottom="58dp"
+                    app:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:id="@+id/register_phase2_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/eight_dp"
+                        android:paddingEnd="@dimen/eight_dp"
+                        android:visibility="gone">
+
+
+                        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+                            android:id="@+id/et_college"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="Your College"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName"
+                            app:met_clearButton="true"
+                            android:ellipsize="end"
+                            app:met_floatingLabel="highlight"
+                            app:met_floatingLabelText="Your College"
+                            app:met_primaryColor="?colorAccent"
+                            app:met_singleLineEllipsis="true" />
+
+                        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+                            android:id="@+id/et_degree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/et_college"
+                            android:layout_marginTop="8dp"
+                            android:hint="Your Degree"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName"
+                            app:met_clearButton="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_floatingLabelText="Your Degree"
+                            app:met_primaryColor="?colorAccent"
+                            app:met_singleLineEllipsis="true" />
+
+                        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+                            android:id="@+id/et_spec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/et_degree"
+                            android:layout_marginTop="8dp"
+                            android:hint="Your Specialization"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName"
+                            app:met_clearButton="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_floatingLabelText="Your Specialization"
+                            app:met_primaryColor="?colorAccent"
+                            app:met_singleLineEllipsis="true" />
+
+                        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+                            android:id="@+id/et_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/et_spec"
+                            android:layout_marginTop="8dp"
+                            android:hint="Your Location"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName"
+                            app:met_clearButton="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_floatingLabelText="Your Location"
+                            app:met_primaryColor="?colorAccent"
+                            app:met_singleLineEllipsis="true" />
+
+                        <LinearLayout
+                            android:id="@+id/batch_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/et_location"
+                            android:orientation="horizontal">
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/et_batch_from"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_weight="1"
+                                android:hint="Batch From"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                app:met_clearButton="true"
+                                app:met_floatingLabel="highlight"
+                                app:met_floatingLabelText="Batch From"
+                                app:met_primaryColor="?colorAccent"
+                                app:met_singleLineEllipsis="true" />
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/et_batch_to"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_weight="1"
+                                android:hint="Batch To"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                app:met_clearButton="true"
+                                app:met_floatingLabel="highlight"
+                                app:met_floatingLabelText="Batch To"
+                                app:met_primaryColor="?colorAccent"
+                                app:met_singleLineEllipsis="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/batch_layout"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="@dimen/sixteen_dp">
+
+                            <CheckBox
+                                android:id="@+id/check_box"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/txt_terms"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="4dp"
+                                android:text="I have read &amp; agree to Youth4work terms &amp; conditions"
+                                android:textColor="@color/txt_black"
+                                android:textSize="@dimen/text_size_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/riple_effect_without_border"
+                android:drawableStart="@drawable/assets_01_ic_arrow_right"
+                android:text="BACK"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/riple_effect_without_border"
+                android:drawableEnd="@drawable/assets_01_ic_arrow_left"
+                android:text="Next"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/riple_effect_without_border"
+                android:drawableEnd="@drawable/assets_01_ic_arrow_left"
+                android:text="signup"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</com.vlonjatg.progressactivity.ProgressRelativeLayout>

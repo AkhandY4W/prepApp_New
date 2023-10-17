@@ -1,0 +1,242 @@
+<resources>
+    <string name="invite_dialog_title">You got an invitation!</string>
+    <string name="question">Your question</string>
+    <string name="description">Description</string>
+    <string name="app_name">Prep Guru</string>
+    <string name="signin">Sign in</string>
+    <string name="password">Password</string>
+    <string name="mystore_password">youth4work</string>
+    <string name="email">Email address/Username</string>
+    <string name="emailid">Email address</string>
+    <string name="googlegay">Pay with Google Pay</string>
+    <string name="mobilevarify"><b>mobileno</b>\n Is your phone number above correct?</string>
+    <string name="changeemailid"><u>here</u></string>
+    <string name="otptryagain">Don\'t get OTP? <b><u>Please Try Again</u></b></string>
+    <string name="otppinmsg"><b>You would have received an SMS with Code,\n We try to read but could not. </b></string>
+    <string name="otpwaitingmsg">If you have not received the SMS/Email tap on Re-send Code button below,It may take up to 5 minutes</string>
+    <string name="pinmsg">Please enter Code below</string>
+    <string name="login_with_google">{fa-google-plus 24dp}\u0020\u0020 Login with Google+</string>
+    <string name="title_activity_main">My Prep</string>
+    <string name="filleducation">(* Please update current education to see the result)</string>
+    <string name="waitingtxt">You are being registered</string>
+    <string name="title_i_am_aspiring">I am aspiring for</string>
+    <string name="title_test_rules">Test rules</string>
+    <string name="title_upgrade_plan">Upgrade plan</string>
+    <string name="title_discussion">Discussion</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home">Dashboard</string>
+    <string name="help">Help</string>
+    <string name="inviteafriend">Invite a friend</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="upgrade_now">Upgrade Now</string>
+    <string name="not_upgrade">I\'ll try tomm.</string>
+    <string name="change_course">Change course</string>
+    <string name="logout">Logout</string>
+    <string name="username">Username</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="new_user_signup"> Sign up free</string>
+    <string name="title_forgot_password">Forgot password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="send_reset_link">Recover Password</string>
+    <string name="get_started">Get started</string>
+    <string name="free_trail">Free Trial</string>
+    <string name="prepare_message">Prepare for any competitive exam and attempt up to 20 free questions/day</string>
+    <string name="full_name">Your Full Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="password_empty">Password cannot be empty</string>
+    <string name="instructions">1. The mock test has 50 free questions/day(unlimited for premium Users) from different topics of the selected exam. \n\n2. Each question has multiple options and one correct answer. A timer on top shows the time left to attempt the respective question. \n\n3. Tap on an option to make your selection, and confirm the answer before time runs out to know whether your answer is right or wrong. \n\n4. Tap Next to proceed to the next question. \n\n5. Review your score at the end of daily mock test, or once you quit the test by tapping the close button. You may now choose to improvise a subject of your choice. \n\nAt last but not the least, do remember, yes you can!</string>
+    <string name="practice_instructions">1. The Practice Session has questions from the selected exam.\n\n2. Each question has multiple options and one correct answer. A timer on top shows the time left to attempt the respective question.\n\n3. Tap on an option to make your selection, and confirm the answer before time runs out to know whether your answer is right or wrong.\n\n4. Tap Next to proceed to the next question.\n\n5. Review your score at the end of practice session, or once you quit the test by tapping the close button.\n\nAt last but not the least, do remember, yes you can!</string>
+    <string name="instructions_header">Please read the following instructions before proceeding further:</string>
+    <string name="start_test">Start test</string>
+    <string name="correct_icon">{fa-check-circle-o} </string>
+    <string name="correct_message">{fa-check-circle-o 35dp} \u0020 Good going.</string>
+    <string name="wrong_message"> \u0020 Better luck next time.</string>
+    <string name="time_up_message"> \u0020 Time up.</string>
+    <string name="confirm">Confirm</string>
+    <string name="next">Next</string>
+    <string name="choose">Choose a plan to prepare better</string>
+    <string name="plan_description"><![CDATA[<ul><li>Access all the subjects.</li><li>Attempt unlimited questions.</li><li>Valid for 1 month.</li></ul>]]></string>
+    <string name="plan_name">Starter Pack</string>
+    <string name="price_only">199 only</string>
+    <string name="report">REPORT</string>
+    <string name="practise">PRACTICE</string>
+    <string name="popular">Popular</string>
+    <string name="eng">Engineering</string>
+    <string name="take_test">Take test</string>
+    <string name="take_Sectest">Take test</string>
+    <string name="review_qs">Review attempted questions</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="speed">Speed</string>
+    <string name="score_up">48 {fa-arrow-up #4CAF51}</string>
+    <string name="day_label">Score</string>
+    <string name="college">College name</string>
+    <string name="degree">Degree</string>
+    <string name="specialization">Specialization</string>
+    <string name="batch_from">Batch from</string>
+    <string name="batch_to">Batch to</string>
+    <string name="location">Location</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="password_reset_link_has_been_emailed_to_you">We have sent your password to your email. Please check your inbox.</string>
+    <string name="btn_continue">Continue</string>
+    <string name="payment_successfull_n_your_pro_pack_is_now_active">Payment successful. \n Your plan is now active</string>
+    <string name="payment_failure_message">Payment unsuccessful. \n Something went wrong</string>
+    <string name="title_activity_plan_review">Review</string>
+    <string name="wrong_icon">{fa-times} </string>
+    <string name="personal_details">Personal Details</string>
+    <string name="ravindra">Amit</string>
+    <string name="ravidsrk_gmail_com">amit.86k@gmail.com</string>
+    <string name="refer">Refer &amp; Unlock</string>
+    <string name="refertext1">If you have invited 5 friends and have not received the free access then mail us at appsupport@youth4work.com</string>
+    <string name="refertext">Refer 5 friends preparing for Competitive Exams to get unlimited access for 2 days.</string>
+    <string name="credit_card_debit_card_net_banking_paytm">Credit Card/Debit Card/Net Banking/Paytm</string>
+    <string name="other_gateways">Other Gateways</string>
+    <string name="total">Total</string>
+    <string name="other">Other</string>
+    <string name="sample">For loop is used when u know the condition till when u have to iterate , and while loop is used when u dont the condition thatmeans unlimited no of times u can iterate it,and  do-while is same as while loopexcept that it will print the statement atleast once irrespective of condition is tru or false</string>
+    <string name="_9945036812">9871217021</string>
+    <string name="pay_now">Pay now</string>
+    <string name="attempt_tests_message">Attempt tests to see your ranking.</string>
+    <string name="type_comment">Type here</string>
+    <string name="you_are_yet_to_begin_your_preparation">You are yet to begin your preparation.</string>
+    <string name="coupontext"><b>GOT A COUPON?</b></string>
+    <string name="facebook_app_id">472226612959751</string>
+    <string name="fb_login_protocol_scheme">fb472226612959751</string>
+    <string name="couponcodedescription">Have a promocode? / check offers</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="order_id">Order Id : </string>
+    <string name="customer_id">Customer Id : </string>
+    <string name="transaction_amount">Transaction Amount : </string>
+    <string name="channel_id">Channel Id : </string>
+    <string name="industry_type_id">Industry Type Id : </string>
+    <string name="website">Website : </string>
+    <string name="theme">Theme : </string>
+    <string name="cust_email_id">Email Id : </string>
+    <string name="cust_mobile_no">Mobile Number : </string>
+    <string name="merchant_id">Merchant Id : </string>
+    <string name="checksum_generation_url">Checksum Generation URL : </string>
+    <string name="checksum_verification_url">Checksum Verification URL : </string>
+    <string name="start_transaction">Start Transaction</string>
+    <string name="sample_order_id">ORDER</string>
+    <string name="sample_customer_id">CUST23657</string>
+    <string name="sample_transaction_amount">1</string>
+    <string name="sample_channel_id">WAP</string>
+    <string name="sample_industry_type_id">Retail109</string>
+    <string name="sample_industry_type_id_staging">Retail</string>
+    <string name="sample_website">worldpressplg</string>
+    <string name="sample_theme">merchant</string>
+    <string name="sample_cust_email_id">abc@gmail.com</string>
+    <string name="sample_cust_mobile_no">123</string>
+    <string name="sample_merchant_id_staging">WorldP64425807474247</string>
+    <string name="sample_checksum_generation_url">https://pguat.paytm.com/merchant-chksum/ChecksumGenerator</string>
+    <string name="sample_checksum_verification_url">https://pguat.paytm.com/merchant-chksum/ValidateChksum</string>
+    <string name="password_input">0123456789.abcdefghijklmnlopqrstuvwxyz</string>
+    <string name="apply">Apply</string>
+    <string name="txt_instruction"><b>INSTRUCTIONS</b>
+    \u0009\u0009\n\n\u2022\u0009This is Mock test.
+    \u0009\u0009\n\u2022\u0009This test has 100-200 questions.
+    \u0009\u0009\n\u2022\u0009It will take approximately 1-3 hours to attempt all the questions
+    \u0009\u0009\n\u2022\u0009If you have read and understood the instructions please click START TEST button
+</string>
+    <string name="tab">\u0009\u0009\u0009\u0009</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="single_formula">$\\int_0^\\infty e^{-x^2} dx=\\frac{\\sqrt{\\pi}}{2}$</string>
+
+    //Dialog message
+    <string name="varifyMobileNo4Forums">Please verify your mobile number\ Email-Id to submit your data!!</string>
+    <string name="daily_limit_title">Daily free question limit has reached</string>
+    <string name="daily_limit_message">Do you want to attempt more questions and prepare better?</string>
+    <string name="quest_bank_over_title">Questions Bank Over</string>
+    <string name="quest_bank_over_msg">No more questions left to attempt.Please wait for us to add new questions.</string>
+    <string name="ok">OK</string>
+    <string name="update_title">New Version Arrived</string>
+    <string name="update_message">Please Update App</string>
+    <string name="download_company_app">This app is for students. Click Ok to access our recruiter’s app.</string>
+    <string name="cancle">CANCEL</string>
+    <string name="free_trail_expire_title">Free Trail Expired</string>
+    <string name="free_trail_expire_msg">Free question limit has reached.</string>
+    <string name="verify_content1"><p><b>We will verifying the Phone number:</b></p></string>
+    <string name="verify_content2"><b> Is this OK, or would you like to edit the number?</b></string>
+    <string name="edit_verify">Edit/Verify</string>
+    <string name="verify">Verify</string>
+    <string name="not_now">Not Now</string>
+    <string name="are_u_sure">Are you sure?</string>
+    <string name="quit_test_msg">Quitting will end the test.\n You can resume later.</string>
+    <string name="quit_mock_test_msg">Quitting will submit the test.\n You can resume later.</string>
+    <string name="verify_no"><![CDATA[
+    <b>Material Dialogs</b> is a library designed and developed by
+    <a href="https://aidanfollestad.com">Aidan Follestad</a>. As of 2018, Aidan currently works
+    on the <u>Square Device Experience</u> team at <a href="https://github.com/square">Square</a>.<br/><br/>
+    <i><font color="#0099CC">Thanks for using Material Dialogs!</font></i>
+  ]]></string>
+    <string name="all_prep">All Prep</string>
+    <string name="my_prep">My Prep</string>
+    <string name="previous_year_papers">Previous Year Papers</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="verify_mobile">Verify Mobile</string>
+    <string name="todo">TODO</string>
+    <string name="mock_test">Mock Test</string>
+    <string name="forum">FORUM</string>
+    <string name="you_haven_t_taken_any_tests_go_to_all_prep">You haven’t taken any tests. Go to <b>All Prep</b>.</string>
+
+    <string name="service_not_available">Service not available</string>
+    <string name="no_address_found">No address found</string>
+    <string name="type_your_message">Type your message</string>
+    <string name="error_occured">Some error occurred. Please try again later</string>
+    <string name="chat">Study Mates</string>
+</resources>

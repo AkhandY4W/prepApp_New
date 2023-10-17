@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtcouponcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/madison"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtcoupondiscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.youth4work.prepapp.ui.views.PrepButton
+            android:id="@+id/btnapplycoupon"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+             android:text="Apply"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

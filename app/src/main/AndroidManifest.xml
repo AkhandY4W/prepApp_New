@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.youth4work.prepapp">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- [START gcm_permission] -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- [END gcm_permission] -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <permission
+        android:name="com.youth4work.prepapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.youth4work.prepapp.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <application
+        android:name=".PrepApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <activity
+            android:name=".ui.home.MyPrepActivity"
+            android:label="My Prep"
+            android:parentActivityName=".ui.home.DashboardActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.home.DiscoverExamsActivity"
+            android:label="All Prep"
+            android:parentActivityName=".ui.home.DashboardActivity"
+            android:screenOrientation="fullSensor" />
+         <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="9a1a380c9ee3499392be11194d7fc4f83fb3dd8e" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_small_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <activity
+            android:name=".ui.startup.SplashActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="www.prep.youth4work.com"
+                    android:scheme="http" />
+                <data
+                    android:host="www.prep.youth4work.com"
+                    android:scheme="https" />
+                <data
+                    android:host="www.prep.youth4work.com"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.startup.DeepLinkActivity"
+            android:screenOrientation="fullSensor" />
+
+        <activity android:name=".ui.startup.SignUp" />
+
+        <activity
+            android:name=".ui.startup.LoginActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.startup.ForgotPasswordActivity"
+            android:label="@string/title_forgot_password"
+            android:parentActivityName=".ui.startup.LoginActivity"
+            android:screenOrientation="fullSensor" />
+
+        <activity
+            android:name=".ui.startup.SignUpActivity"
+            android:label="@string/sign_up"
+            android:parentActivityName=".ui.startup.LoginActivity"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.startup.UpdateEducation"
+            android:label="Update Education Details"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.startup.GettingStartedActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.payment.UpgradePlanActivity"
+            android:label="@string/title_upgrade_plan"
+            android:parentActivityName=".ui.home.DashboardActivity"
+            android:screenOrientation="fullSensor" />
+
+        <activity
+            android:name=".ui.payment.PaymentStatusActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.quiz.TestRulesActivity"
+            android:label="@string/title_test_rules"
+            android:parentActivityName=".ui.home.DashboardActivity"
+            android:screenOrientation="fullSensor" />
+
+        <activity
+            android:name=".ui.home.CategoryExamsActivity"
+            android:label="@string/title_i_am_aspiring"
+            android:parentActivityName=".ui.home.ChooseExamActivity"
+            android:screenOrientation="fullSensor" />
+
+        <activity
+            android:name=".ui.quiz.DailyTestActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.quiz.DiscussionActivity"
+            android:theme="@style/Theme.DesignDemo" />
+
+        <activity
+            android:name=".ui.home.InviteFriendActivity"
+            android:label="Referrals"
+            android:parentActivityName=".ui.home.DashboardActivity"
+            android:screenOrientation="fullSensor" />
+
+        <activity
+            android:name=".ui.home.DashboardActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.quiz.ReviewTestActivity"
+            android:parentActivityName=".ui.quiz.DailyTestActivity"
+            android:screenOrientation="fullSensor" />
+
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+
+        <activity
+            android:name=".ui.payment.PlanReviewActivity"
+            android:label="@string/title_activity_plan_review"
+            android:parentActivityName=".ui.payment.UpgradePlanActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.home.ChooseExamActivity"
+            android:label="@string/title_i_am_aspiring"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.forum.PrepForumDetails"
+            android:theme="@style/Theme.DesignDemo" />
+
+        <activity
+            android:name=".ui.forum.CommentsActivity"
+            android:theme="@style/Theme.DesignDemo" />
+
+        <activity android:name=".ui.quiz.SectionTestActivity" />
+
+        <activity android:name=".ui.quiz.SectionTestActivityNew" />
+
+        <service android:name=".firebase.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.quiz.RatingActivity"
+            android:parentActivityName=".ui.quiz.ReviewTestActivity"
+            android:theme="@style/RatingBar" />
+
+        <activity
+            android:name=".ui.startup.AllWebView"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".PayTM.PaytmPGActivity" />
+
+        <activity
+            android:name=".ui.home.NoInternetActivity"
+            android:theme="@style/noInternetstyle" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.payment.ApplyCouponActivity"
+            android:label="Apply Coupon"
+            android:parentActivityName=".ui.payment.UpgradePlanActivity" />
+
+        <activity
+            android:name=".ui.home.VerificationActivity"
+            android:label="Verification" />
+
+        <activity android:name=".ui.payment.GooglePayActivity" />
+
+        <activity
+            android:name=".ui.quiz.MockTestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.quiz.MockTestRulesActivity"
+            android:label="Mock Test Rules"
+            android:parentActivityName=".ui.home.DashboardActivity" />
+
+        <activity
+            android:name=".ui.forum.AskQuestionActivity"
+            android:theme="@style/alert" />
+
+        <activity
+            android:name=".ui.forum.AddAnswerActivity"
+            android:theme="@style/alert" />
+
+        <activity
+            android:name=".ui.forum.AddCommentActivity"
+            android:theme="@style/alert" />
+
+        <activity
+            android:name=".ui.quiz.AddSolutionActivity"
+            android:theme="@style/alert" />
+
+        <activity android:name=".ui.startup.RegisterationActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.workmail.WorkMailActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Work Mail"
+            android:parentActivityName=".ui.home.MyPrepActivity" />
+
+        <activity
+            android:name=".ui.workmail.ConversationActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Conversations"
+            android:parentActivityName=".ui.workmail.WorkMailActivity" />
+        <activity android:name=".ui.home.ChatActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".ui.public_profile.ProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".ui.home.ChatActivity"
+            android:theme="@style/Theme.DesignDemo"/>
+    </application>
+
+</manifest>

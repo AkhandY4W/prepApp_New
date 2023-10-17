@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="4dp"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.youth4work.prepapp.ui.views.CustomTextViewFontRegular
+            android:id="@+id/txt_exam_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/txt_paper"
+            android:text="JEE JEE JEE JEE JEE JEE JEE JEE JEE JEE JEE JEE JEE JEE JEE "
+            android:textColor="@color/mine_shaft"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_paper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_exam_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/state_pressed_ripple"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textSize="@dimen/text_size_12"
+            android:text="Previous year papers"
+            android:textColor="@color/colorPrimary" />
+
+        <com.youth4work.prepapp.ui.views.CustomTextViewFontRegular
+            android:id="@+id/txt_exam_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_exam_name"
+            android:layout_marginTop="8dp"
+            android:text="@string/eng"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/txt_exam_attempts"
+            android:textColor="@color/mako"
+            android:textSize="@dimen/fourteen_sp"/>
+
+        <com.youth4work.prepapp.ui.views.CustomTextViewFontRegular
+            android:id="@+id/txt_exam_attempts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_paper"
+            android:layout_alignTop="@+id/txt_exam_category"
+            android:layout_alignParentRight="true"
+            android:drawableStart="@drawable/txt_ic_test_taker"
+            android:drawableLeft="@drawable/txt_ic_test_taker"
+            android:drawablePadding="4dp"
+            android:text="230 aspirants"
+            android:textColor="@color/dove_gray"
+            android:textSize="@dimen/fourteen_sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

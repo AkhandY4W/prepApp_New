@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "916723841562",
+    "project_id": "prep-guruandroid---ga4-c5d63",
+    "storage_bucket": "prep-guruandroid---ga4-c5d63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916723841562:android:b647de48f38c12c1daefa3",
+        "android_client_info": {
+          "package_name": "com.youth4work.prepapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfIY-mikJyLsXp8c4oG0f0H_Qz12dWnho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

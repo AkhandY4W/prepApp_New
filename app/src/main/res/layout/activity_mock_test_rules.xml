@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.quiz.MockTestRulesActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/txt_instruction"
+       android:lineSpacingExtra="4dp"
+       android:textColor="@color/text_grey_dark"
+       android:textSize="18sp"
+       android:text="@string/txt_instruction"/>
+    <Button
+        android:id="@+id/btn_start_mock_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Start Test"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/blue_border"/>
+</RelativeLayout>

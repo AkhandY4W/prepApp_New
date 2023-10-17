@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/img_user_avatar"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_below="@+id/comment_image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="14dp" />
+
+        <com.youth4work.prepapp.ui.views.CustomTextViewFontRegular
+            android:id="@+id/txt_comment_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txt_comment_date_time"
+            android:layout_alignParentRight="true"
+            android:text="A. This is the correct answer"
+            android:textColor="@color/bombay"
+            android:visibility="gone" />
+
+        <com.youth4work.prepapp.ui.views.CustomTextViewFontRegular
+            android:id="@+id/txt_commented_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment_image"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/img_user_avatar"
+            android:layout_toRightOf="@+id/img_user_avatar"
+            android:text="Amit"
+            android:textColor="@color/txt_black_30"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/txt_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="A. This is the correct answer"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_16"/>
+
+        <ImageView
+            android:id="@+id/comment_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_comment"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_icon"
+            android:visibility="gone" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

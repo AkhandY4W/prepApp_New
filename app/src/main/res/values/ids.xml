@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="question_item_id" type="id" />
+    <item name="discussion_item_id" type="id" />
+    <item name="subject_item_id" type="id" />
+    <item name="category_item_id" type="id" />
+    <item name="parent_category_item_id" type="id" />
+    <item name="attempt_item_id" type="id" />
+    <item name="user_stats_item_id" type="id" />
+    <item name="subject_stats_item_id" type="id" />
+</resources>

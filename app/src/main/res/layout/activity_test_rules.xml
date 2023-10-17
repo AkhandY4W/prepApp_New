@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:ignore="MissingPrefix">
+
+    <ScrollView
+        android:id="@+id/scrlHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_start_test">
+
+        <RelativeLayout
+            android:id="@+id/rlPlaceHolderrule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <com.youth4work.prepapp.ui.views.CustomTextViewFontRegular
+                android:id="@+id/lblPaymentDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:paddingLeft="@dimen/sixteen_dp"
+                android:paddingRight="@dimen/sixteen_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/instructions_header"
+                android:textSize="@dimen/fifteen_dp" />
+
+            <com.youth4work.prepapp.ui.views.CustomTextViewFontRegular
+                android:id="@+id/lblPaymentDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblPaymentDescription"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="start"
+                android:paddingLeft="@dimen/sixteen_dp"
+                android:paddingRight="@dimen/sixteen_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/instructions"
+                android:textSize="@dimen/fifteen_dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.youth4work.prepapp.ui.views.PrepButton
+        android:id="@+id/btn_start_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="15dp"
+        android:text="@string/start_test"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_font_sp"
+        app:buttonColor="@color/curiousBlue"
+        app:cornerRadius="3dp"
+        app:shadowEnabled="false"
+        app:shadowHeight="1dp" />
+
+</RelativeLayout>

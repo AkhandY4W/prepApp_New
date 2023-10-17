@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    android:layout_marginTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/forum"
+            android:fontFamily="@font/robotobold"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="4dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sample"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.youth4work.prepapp.ui.views.CustomTextViewFontRegular
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="2dp"
+            android:fontFamily="@font/robotomedium"
+            android:text="Description : What a question to be solved takes no time to solve and score. "
+            android:textColor="@color/txt_black_70"
+            android:textSize="@dimen/text_size_14" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/totalViews"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Views : 18 "
+                android:textColor="@color/mine_shaft"
+                android:textSize="12sp" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/totalAnswer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Answers : 2"
+                android:textColor="@color/mine_shaft"
+                android:textSize="12sp" />
+
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/imageQuestion1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="4dp"
+                android:src="@mipmap/com_facebook_profile_picture_blank_portrait"
+                android:visibility="visible" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/createdByName1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="By : Samar"
+                android:textColor="@color/mine_shaft"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/imageQuestion"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@mipmap/com_facebook_profile_picture_blank_portrait"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/createdByName"
+                android:text="By Rachit . 0 Views . 0 Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_black_30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/robotoregular"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

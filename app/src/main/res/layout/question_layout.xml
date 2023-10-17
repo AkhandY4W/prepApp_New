@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vlonjatg.progressactivity.ProgressRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progressActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_unattempted_24dp" />
+
+        <ImageView
+            android:id="@+id/image_mark_for_review"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginLeft="2016dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="22dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_mark_for_review_icon" />
+
+        <TextView
+            android:id="@+id/txt_question_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="120"
+            android:textColor="@color/text_grey_dark"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/txt_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/frame_layout"
+        android:layout_toRightOf="@+id/frame_layout"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="2"
+        android:padding="4dp"
+        android:text="@string/appbar_scrolling_view_behavior" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/frame_layout"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/frame_layout"
+        android:layout_toRightOf="@+id/frame_layout"
+        android:background="@color/grey" />
+</com.vlonjatg.progressactivity.ProgressRelativeLayout>
